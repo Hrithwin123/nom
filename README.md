@@ -49,7 +49,6 @@ A playful, modern landing page and info site for Nom Nom Tails — a Bangalore-b
 3. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
 
 ## ✨ Credits
-- UI/UX & code: [Your Name or Team]
 - Powered by **Bloomi5**
 
 ---
