@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { Phone, Mail, MapPin, Instagram, Search } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +49,6 @@ const ContactPage = () => {
 
             {/* Right side */}
             <div className="flex items-center space-x-4">
-              <Search className="w-5 h-5 text-gray-300" />
               <div className="text-orange-400 text-sm">+91 99168 69595</div>
               <Instagram className="w-5 h-5 text-gray-300" />
               <div className="text-gray-300 text-sm">Sign In</div>

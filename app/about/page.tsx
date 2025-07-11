@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Phone, Instagram, Search, Eye } from 'lucide-react';
+import { Phone, Instagram, Eye } from 'lucide-react';
 
 const AboutUs = () => {
   return (
@@ -36,7 +36,6 @@ const AboutUs = () => {
 
             {/* Right Side */}
             <div className="flex items-center space-x-4">
-              <Search className="text-white w-5 h-5" />
               <div className="flex items-center text-orange-400">
                 <Phone className="w-4 h-4 mr-1" />
                 <span className="text-sm">+91 93168 69595</span>
