@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* Hero Section */}
-      <div style={{backgroundPositionX : "240px"}} className="w-full relative h-[100dvh] bg-[url('/hero.png')] bg-contain bg-no-repeat bg-center bg-black">
+      <div id="home" style={{backgroundPositionX : "240px"}} className="w-full relative h-[100dvh] bg-[url('/hero.png')] bg-contain bg-no-repeat bg-center bg-black">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: -50 }}
@@ -78,9 +78,9 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.9 }}
             className="flex text-white gap-5 font-bold items-center justify-center mr-10 ml-10"
           >
-            <div>Home</div>
-            <div>About Us</div>
-            <div>Contact us</div>
+            <Link href="/" className="hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">Home</Link>
+            <Link href="/about" className="hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">About Us</Link>
+            <Link href="/contact" className="hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">Contact us</Link>
           </motion.div>
 
           <motion.div 
@@ -89,20 +89,20 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 1.2 }}
             className="flex gap-3 items-center justify-evenly w-[40%]"
           >
-            <div className="text-[var(--dog-orange)] flex items-center justify-center gap-2">
+            <a href="tel:+919916869595" className="text-[var(--dog-orange)] flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
               <Phone size={15} /> +91 99168 69595
-            </div>
+            </a>
 
-            <div className="text-white">
+            <a href="https://instagram.com/nomnomtails" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">
               <Instagram size={20} />
-            </div>
+            </a>
 
             <motion.div 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="w-[24%] font-bold h-12 border-1 border-[var(--dog-orange)] rounded-full text-[var(--dog-orange)] flex items-center justify-center cursor-pointer"
             >
-              Sign in
+              <Link href="#signin" className="w-full h-full flex items-center justify-center">Sign in</Link>
             </motion.div>
 
             <motion.div 
@@ -110,7 +110,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
               className="w-[25%] font-bold h-12 border-1 border-[var(--dog-orange)] rounded-full bg-[var(--dog-orange)] text-black flex items-center justify-center cursor-pointer"
             >
-              Contact Us
+              <Link href="/contact" className="w-full h-full flex items-center justify-center">Contact Us</Link>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -178,13 +178,16 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
             className="mt-10 text-xl text-black w-40 h-15 rounded-2xl bg-white flex flex-row items-center justify-center gap-1"
           >
-            <span>Start Now <ChevronRight className="inline mb-[2px]" size={25}/></span>
+            <Link href="#mealplans" className="flex items-center gap-1">
+              <span>Start Now <ChevronRight className="inline mb-[2px]" size={25}/></span>
+            </Link>
           </motion.button>
         </motion.div>
       </div>
 
       {/* Mission & Vision Section */}
       <motion.div 
+        id="about"
         ref={missionRef}
         initial="initial"
         animate={missionInView ? "animate" : "initial"}
@@ -344,6 +347,7 @@ export default function Home() {
 
       {/* Meal Plans Section */}
       <motion.div 
+        id="mealplans"
         ref={mealPlansRef}
         initial="initial"
         animate={mealPlansInView ? "animate" : "initial"}
@@ -454,13 +458,14 @@ export default function Home() {
           whileTap={{ scale: 0.95 }}
           className='w-35 text-lg h-12 rounded-full bg-[var(--dog-orange)] mb-10 mt-10'
         >
-          Start Now
+          <Link href="#contact" className="w-full h-full flex items-center justify-center text-black">Start Now</Link>
         </motion.button>
       </motion.div>
 
       {/* FAQ Section */}
       <motion.div 
         ref={faqRef}
+        id="faq"
         initial="initial"
         animate={faqInView ? "animate" : "initial"}
         className='h-[100dvh] w-full flex items-center justify-center'
@@ -564,6 +569,7 @@ export default function Home() {
 
       {/* Footer */}
       <motion.div 
+        id="contact"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -575,23 +581,23 @@ export default function Home() {
           <div className="text-[#BAB3A4]">Copyright © Nom Nom Tails</div>
         </div>
 
-        <div className="flex items-center justify-center gap-4 text-white mr-35">
-          <div>Home</div>
-          <div>About us</div>
-          <div>Products</div>
-          <div>Services</div>
-          <div>Privacy Policy</div>
+        <div className="flex items-center justify-center gap-4 text-white mr-35 w-[35%]">
+          <Link href="/" className="hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">Home</Link>
+          <Link href="/about" className="hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">About us</Link>
+          <Link href="/contact" className="hover:text-[var(--dog-orange)] transition-colors duration-300 cursor-pointer">Contact us</Link>
         </div>
 
         <div className="flex flex-col items-center justify-center gap-10">
           <div className='flex items-center justify-center gap-5'>
-            <Instagram className='text-white' size={35}/>
+            <a href="https://instagram.com/nomnomtails" target="_blank" rel="noopener noreferrer">
+              <Instagram className='text-white hover:text-[var(--dog-orange)] transition-colors duration-300' size={35}/>
+            </a>
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="w-35 bg-white rounded-full h-10"
             >
-              Get in touch
+              <Link href="/contact" className="w-full h-full flex items-center justify-center text-black font-bold">Get in touch</Link>
             </motion.button>
           </div>
           <div className="text-white font-bold">Powered by Bloomi5</div>

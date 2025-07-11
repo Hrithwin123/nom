@@ -42,10 +42,9 @@ const ContactPage = () => {
 
             {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">About Us</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Blog</a>
-              <a href="#" className="text-white font-semibold">Contact us</a>
+              <a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a>
+              <a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a>
+              <a href="/contact" className="text-white font-semibold">Contact us</a>
             </nav>
 
             {/* Right side */}
@@ -214,19 +213,17 @@ const ContactPage = () => {
 
             {/* Navigation */}
             <nav className="flex flex-wrap justify-center lg:justify-end space-x-8 mb-8 lg:mb-0">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">About us</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Products</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Services</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a>
+              <a href="/about" className="text-gray-300 hover:text-white transition-colors">About us</a>
+              <a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact us</a>
             </nav>
 
             {/* Right side */}
             <div className="flex items-center space-x-4">
               <Instagram className="w-6 h-6 text-gray-300 hover:text-white transition-colors cursor-pointer" />
-              <button className="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+              <a href="/contact" className="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
                 Get in touch
-              </button>
+              </a>
             </div>
           </div>
 
@@ -235,11 +232,7 @@ const ContactPage = () => {
               Copyright © Nom Nom Tails
             </div>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
-              <span>Powered by</span>
-              <div className="bg-white text-gray-800 px-2 py-1 rounded text-xs font-semibold">
-                odoo
-              </div>
-              <span>- Create a free website</span>
+              <span>Powered by Bloomi5</span>
             </div>
           </div>
         </div>

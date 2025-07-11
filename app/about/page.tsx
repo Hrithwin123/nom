@@ -29,10 +29,9 @@ const AboutUs = () => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-white hover:text-orange-400 transition-colors">Home</a>
-              <a href="#" className="text-white hover:text-orange-400 transition-colors">About Us</a>
-              <a href="#" className="text-white hover:text-orange-400 transition-colors">Blog</a>
-              <a href="#" className="text-white hover:text-orange-400 transition-colors">Contact us</a>
+              <a href="/" className="text-white hover:text-orange-400 transition-colors">Home</a>
+              <a href="/about" className="text-white hover:text-orange-400 transition-colors">About Us</a>
+              <a href="/contact" className="text-white hover:text-orange-400 transition-colors">Contact us</a>
             </div>
 
             {/* Right Side */}
@@ -206,40 +205,38 @@ const AboutUs = () => {
         {/* Footer */}
         <footer className="bg-gray-900 text-white py-12">
           <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col md:flex-row justify-between items-center">
               {/* Left Side */}
-              <div>
+              <div className="mb-8 md:mb-0">
                 <Image
                   src="/logo.webp"
                   alt="Nom Nom Tails Logo"
                   width={100}
                   height={60}
-                  className="mb-8"
+                  className="mb-4"
                 />
                 <p className="text-gray-400">Copyright © Nom Nom Tails</p>
               </div>
 
-              {/* Right Side */}
-              <div className="md:text-right">
-                <div className="flex flex-wrap justify-start md:justify-end gap-6 mb-8">
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">Home</a>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">About us</a>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">Products</a>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">Services</a>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
-                </div>
-                <div className="flex items-center justify-start md:justify-end space-x-4">
-                  <Instagram className="w-5 h-5" />
-                  <button className="bg-white text-gray-900 px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors">
-                    Get in touch
-                  </button>
-                </div>
-                <div className="mt-4 text-right">
-                  <span className="text-gray-400">Powered by</span>
-                  <span className="ml-2 text-white">oooo</span>
-                  <span className="ml-2 text-gray-400">- Create a Free website</span>
-                </div>
+              {/* Center Navigation */}
+              <div className="flex flex-wrap justify-center gap-6 mb-8 md:mb-0">
+                <a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="/about" className="text-gray-400 hover:text-white transition-colors">About us</a>
+                <a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact us</a>
               </div>
+
+              {/* Right Side */}
+              <div className="flex items-center space-x-4">
+                <Instagram className="w-5 h-5" />
+                <a href="/contact" className="bg-white text-gray-900 px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                  Get in touch
+                </a>
+              </div>
+            </div>
+            
+            {/* Powered by section */}
+            <div className="mt-8 pt-8 border-t border-gray-800 text-center">
+              <span className="text-gray-400">Powered by Bloomi5</span>
             </div>
           </div>
         </footer>
