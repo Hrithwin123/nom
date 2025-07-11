@@ -226,9 +226,9 @@ const ContactPage = () => {
             {/* Right side */}
             <div className="flex items-center space-x-4">
               <Instagram className="w-6 h-6 text-gray-300 hover:text-white transition-colors cursor-pointer" />
-              <a href="/contact" className="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+              <Link href="/contact" className="bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors">
                 Get in touch
-              </a>
+              </Link>
             </div>
           </div>
 
