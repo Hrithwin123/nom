@@ -375,7 +375,7 @@ export default function Home() {
           variants={fadeInUp}
           className='mt-3 text-xl'
         >
-          Whether you're caring for one loyal pup or a whole streetie crew, our meals are freshly
+          Whether you&apos;re caring for one loyal pup or a whole streetie crew, our meals are freshly
         </motion.div>
         <motion.div 
           variants={fadeInUp}
