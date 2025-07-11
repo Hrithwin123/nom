@@ -485,13 +485,13 @@ export default function Home() {
               variants={fadeInUp}
               className="mt-3 text-lg font-bold"
             >
-              Got questions? We've got tail-wagging answers.
+              Got questions? We&apos;ve got tail-wagging answers.
             </motion.div>
             <motion.div 
               variants={fadeInUp}
               className="mt-3"
             >
-              Whether you're a first-time feeder or a long-time rescuer, we're here to make
+              Whether you&apos;re a first-time feeder or a long-time rescuer, we&apos;re here to make
             </motion.div>
             <motion.div 
               variants={fadeInUp}
@@ -514,7 +514,7 @@ export default function Home() {
               },
               {
                 question: "Do you deliver to all parts of Bangalore?",
-                answer: "We're based in Sahakar Nagar, but we do deliver to nearby areas and other parts of Bangalore depending on the order size and timing. Just message us — if we can reach you, we will!",
+                answer: "We&apos;re based in Sahakar Nagar, but we do deliver to nearby areas and other parts of Bangalore depending on the order size and timing. Just message us — if we can reach you, we will!",
                 isOpen: open2,
                 toggle: () => setOpen2(!open2)
               },

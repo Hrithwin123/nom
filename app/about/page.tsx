@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { Phone, Instagram, Eye } from 'lucide-react';
+import { Phone, Instagram } from 'lucide-react';
+import Link from 'next/link';
 
 const AboutUs = () => {
   return (
@@ -29,9 +30,9 @@ const AboutUs = () => {
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="/" className="text-white hover:text-orange-400 transition-colors">Home</a>
-              <a href="/about" className="text-white hover:text-orange-400 transition-colors">About Us</a>
-              <a href="/contact" className="text-white hover:text-orange-400 transition-colors">Contact us</a>
+              <Link href="/" className="text-white hover:text-orange-400 transition-colors">Home</Link>
+              <Link href="/about" className="text-white hover:text-orange-400 transition-colors">About Us</Link>
+              <Link href="/contact" className="text-white hover:text-orange-400 transition-colors">Contact us</Link>
             </div>
 
             {/* Right Side */}
@@ -69,11 +70,11 @@ const AboutUs = () => {
                 
                 <div className="space-y-6 text-gray-600">
                   <p>
-                    <span className="font-bold text-gray-800">Nom Nom Tails</span> isn't just about dog food — it's about heart.
+                    <span className="font-bold text-gray-800">Nom Nom Tails</span> isn&apos;t just about dog food — it&apos;s about heart.
                   </p>
                   
                   <p>
-                    We're a kindness kitchen based in <span className="font-bold text-gray-800">Sahakar Nagar, Bangalore</span>, lovingly cooking fresh, affordable meals for pet dogs and community streeties every single day.
+                    We&apos;re a kindness kitchen based in <span className="font-bold text-gray-800">Sahakar Nagar, Bangalore</span>, lovingly cooking fresh, affordable meals for pet dogs and community streeties every single day.
                   </p>
                   
                   <p>
@@ -81,7 +82,7 @@ const AboutUs = () => {
                   </p>
                   
                   <p>
-                    Whether you feed one loyal pup or a full street pack, you're part of our mission — and we're right beside you with bowls full of goodness.
+                    Whether you feed one loyal pup or a full street pack, you&apos;re part of our mission — and we&apos;re right beside you with bowls full of goodness.
                   </p>
                 </div>
               </div>
@@ -219,17 +220,17 @@ const AboutUs = () => {
 
               {/* Center Navigation */}
               <div className="flex flex-wrap justify-center gap-6 mb-8 md:mb-0">
-                <a href="/" className="text-gray-400 hover:text-white transition-colors">Home</a>
-                <a href="/about" className="text-gray-400 hover:text-white transition-colors">About us</a>
-                <a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact us</a>
+                <Link href="/" className="text-gray-400 hover:text-white transition-colors">Home</Link>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">About us</Link>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact us</Link>
               </div>
 
               {/* Right Side */}
               <div className="flex items-center space-x-4">
                 <Instagram className="w-5 h-5" />
-                <a href="/contact" className="bg-white text-gray-900 px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                <Link href="/contact" className="bg-white text-gray-900 px-4 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors">
                   Get in touch
-                </a>
+                </Link>
               </div>
             </div>
             

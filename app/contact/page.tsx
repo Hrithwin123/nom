@@ -1,6 +1,8 @@
 "use client"
 
 import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 
 const ContactPage = () => {
@@ -33,18 +35,20 @@ const ContactPage = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
+              <Image 
                 src="/logo.webp" 
                 alt="Nom Nom Tails" 
+                width={100}
+                height={48}
                 className="h-12 w-auto"
               />
             </div>
 
             {/* Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a>
-              <a href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</a>
-              <a href="/contact" className="text-white font-semibold">Contact us</a>
+              <Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
+              <Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link>
+              <Link href="/contact" className="text-white font-semibold">Contact us</Link>
             </nav>
 
             {/* Right side */}
@@ -74,9 +78,11 @@ const ContactPage = () => {
           <div>
             {/* Dogs Image */}
             <div className="mb-8">
-              <img 
+              <Image 
                 src="/dogies.webp"
                 alt="Street dogs"
+                width={600}
+                height={400}
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -85,10 +91,10 @@ const ContactPage = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-6">Get in Touch</h2>
               <p className="text-gray-600 text-lg mb-6">
-                We're here for you — and your streetie squad!
+                We&apos;re here for you — and your streetie squad!
               </p>
               <p className="text-gray-600 text-lg mb-8">
-                Whether you're placing an order, have questions about our food, or just want to chat about feeding the goodest boys and girls — we'd love to hear from you.
+                Whether you&apos;re placing an order, have questions about our food, or just want to chat about feeding the goodest boys and girls — we&apos;d love to hear from you.
               </p>
 
               {/* Contact Info */}
@@ -203,7 +209,7 @@ const ContactPage = () => {
           <div className="flex flex-col lg:flex-row justify-between items-center">
             {/* Logo */}
             <div className="mb-8 lg:mb-0">
-              <img 
+              <Image 
                 src="/logo.webp" 
                 alt="Nom Nom Tails" 
                 className="h-16 w-auto"
@@ -212,9 +218,9 @@ const ContactPage = () => {
 
             {/* Navigation */}
             <nav className="flex flex-wrap justify-center lg:justify-end space-x-8 mb-8 lg:mb-0">
-              <a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a>
-              <a href="/about" className="text-gray-300 hover:text-white transition-colors">About us</a>
-              <a href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact us</a>
+              <Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link>
+              <Link href="/about" className="text-gray-300 hover:text-white transition-colors">About us</Link>
+              <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact us</Link>
             </nav>
 
             {/* Right side */}
