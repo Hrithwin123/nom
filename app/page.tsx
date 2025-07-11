@@ -1,5 +1,6 @@
 'use client';
 import { useState, useRef } from 'react';
+import Link from 'next/link';
 import { Phone, Instagram, ChevronRight, ChevronDown, ChevronUp} from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
 
@@ -79,7 +80,6 @@ export default function Home() {
           >
             <div>Home</div>
             <div>About Us</div>
-            <div>Blog</div>
             <div>Contact us</div>
           </motion.div>
 
